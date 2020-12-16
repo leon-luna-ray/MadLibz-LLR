@@ -1,6 +1,6 @@
 $(document).ready(function renderPage() {
     $.ajax( {
-        url: "http://madlibz.herokuapp.com/api/random"
+        url: "https://madlibz.herokuapp.com/api/random"
     }).then(function(result) {
         const wordBlanks = result.blanks; 
         const storyTitle = result.title;
