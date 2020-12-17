@@ -17,6 +17,7 @@ $(document).ready(function renderPage() {
         let userWords = [];
         let userStory = [];
 
+
         function renderStory(){
             $(".choose-words-page").attr("id", "hide");
             $(".story-page").attr("id", "show");  
@@ -28,15 +29,16 @@ $(document).ready(function renderPage() {
             userStory = storyText.map(function(value, index){
                 return value + userWords[index];
             });
-            
+
+            userStory.toString();
+
             $(".title").text(storyTitle);
-            $(".story-text").text(userStory.toString());
+            $(".story-text").text(madLib);
 
             console.log(userWords);
         };
 
         $(".start-btn").click(renderStory);
-        
     });
 });
 
